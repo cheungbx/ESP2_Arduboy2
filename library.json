@@ -1,0 +1,17 @@
+{
+    "name": "Arduboy2",
+    "keywords": "arduboy, game",
+    "description": "An alternative library for ESP8266 to support content creation on the Arduboy miniature gaming platform",
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/ESPboy-edu/ESPboy_Arduboy2_lib.git"
+    },
+    "version": "1.0.1",
+    "export":
+    {
+        "exclude": "extras"
+    },
+    "frameworks": "arduino",
+    "platforms": "espressif"
+}
