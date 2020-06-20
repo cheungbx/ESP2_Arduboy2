@@ -2,6 +2,13 @@
  * @file Arduboy2Core.cpp
  * \brief
  * The Arduboy2Core class for Arduboy hardware initilization and control.
+ #  ESP2 Arduboy2
+ This is a port of the ESPBoy project library for a customized circuit where resister ladder is used to replace the MCP23017 I2C extenders to drive buttons. Include all 8 buttons in ESPBoy.
+ The library will autodetect whether the original espboy circuit with MCP23017 is present. If not, it'll read the ADC (A0) and sense the voltage of the resistoer ladder to detect the combination of buttons
+ Tie one end of the six buttons to the ADC (A0)
+ Tie the other end of the buttons to the resistoer ladder as follows.
+ GND-9.1K-UP-9.1K-LEFT-12K-RIGHT-9.1k-DOWN-9.1k-LFT-9.1K-RGT-12K-A-10K-B-9.1K-3.3V.
+ 
  */
 
 #include "Arduboy2Core.h"
